@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444546"
+    tools:context=".events.register.edit.editEventFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#444546">
+>
+
+        <TextView
+            android:id="@+id/editEventText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:text="EDIT YOUR EVENT"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <EditText
+            android:id="@+id/editEventName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Event Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editEventText" />
+
+        <EditText
+            android:id="@+id/editAddressState"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="State"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toStartOf="@+id/editAddressPostcode"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editAddressPostcode" />
+
+        <EditText
+            android:id="@+id/editAddressPostcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Postcode"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editAddressState"
+            app:layout_constraintTop_toBottomOf="@+id/editAddressSuburb"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/editAddressSuburb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Suburb"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editAddressStreet" />
+
+        <EditText
+            android:id="@+id/editAddressStreet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Street Number And Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editLabelAddress"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/editLabelAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="Address:"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editEndDate" />
+
+        <EditText
+            android:id="@+id/editEndDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="DD/MM/YYYY"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toStartOf="@+id/editEndTime"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editEndTime"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/editEndTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="00:00"
+            android:inputType="time"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editEndDate"
+            app:layout_constraintTop_toBottomOf="@+id/editLabelEndTime" />
+
+        <TextView
+            android:id="@+id/editLabelEndTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="End Time:"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editLabelEndDate"
+            app:layout_constraintTop_toBottomOf="@+id/editStartTime" />
+
+        <TextView
+            android:id="@+id/editLabelEndDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="End Date:"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toStartOf="@+id/editLabelEndTime"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editLabelEndTime" />
+
+        <EditText
+            android:id="@+id/editStartDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="DD/MM/YYYY"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toStartOf="@+id/editStartTime"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editStartTime"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/editStartTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="00:00"
+            android:inputType="time"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editStartDate"
+            app:layout_constraintTop_toBottomOf="@+id/editLabelStartTime"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/editLabelStartTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="Start Time:"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editLabelStartDate"
+            app:layout_constraintTop_toBottomOf="@+id/editEventName" />
+
+        <TextView
+            android:id="@+id/editLabelStartDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="Start Date:"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toStartOf="@+id/editLabelStartTime"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editLabelStartTime" />
+
+
+        <Button
+            android:id="@+id/editEventSaveChanges"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#E81D4C"
+            android:text="SAVE CHANGES"
+            app:iconGravity="start"
+            app:layout_constraintEnd_toStartOf="@+id/editEventCancelButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editAddressState" />
+
+        <Button
+            android:id="@+id/editEventCancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#E81D4C"
+            android:text="CANCEL"
+            app:layout_constraintBottom_toBottomOf="@+id/editEventSaveChanges"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editEventSaveChanges"
+            app:layout_constraintTop_toTopOf="@+id/editEventSaveChanges"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/edit_event"
+            app:tint="#E81D4C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

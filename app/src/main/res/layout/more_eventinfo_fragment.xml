@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444546"
+    tools:context=".events.register.edit.moreEventInfoFragment">
+
+
+    <TextView
+        android:id="@+id/moreInfoDateTextView"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="4dp"
+        android:background="#444546"
+        android:text="Date "
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#E81D4C"
+        app:layout_constraintEnd_toStartOf="@+id/moreInfoTimeTextView"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/moreInfoNameTextView" />
+
+    <TextView
+        android:id="@+id/moreInfoNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="#444546"
+        android:text="Event Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/moreInfoEventTypeTextView"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/moreInfoEventImageView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+
+    <ImageView
+        android:id="@+id/moreInfoEventImageView"
+        android:layout_width="0dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/poster_2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/editEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#000000"
+        android:text="EDIT"
+        app:layout_constraintBottom_toTopOf="@+id/deleteEventButton"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5" />
+
+    <Button
+        android:id="@+id/deleteEventButton"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="DELETE EVENT"
+        app:icon="@android:drawable/ic_delete"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/backEventButton"
+        app:layout_constraintTop_toTopOf="@+id/backEventButton" />
+
+    <TextView
+        android:id="@+id/moreInfoEventTypeTextView"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="Event Type"
+        android:textAlignment="textEnd"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toEndOf="@+id/moreInfoNameTextView"
+        app:layout_constraintTop_toTopOf="@+id/moreInfoNameTextView" />
+
+    <TextView
+        android:id="@+id/moreInfoAddressStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:text="Number and Street"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/moreInfoDateTextView" />
+
+    <TextView
+        android:id="@+id/moreInfoAddressSuburb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:text="Suburb"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/moreInfoAddressStreet" />
+
+    <TextView
+        android:id="@+id/moreInfoAddressState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:text="State"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/moreInfoAddressSuburb" />
+
+    <TextView
+        android:id="@+id/moreInfoAddressPostcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Postcode"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toEndOf="@+id/moreInfoAddressState"
+        app:layout_constraintTop_toTopOf="@+id/moreInfoAddressState" />
+
+    <TextView
+        android:id="@+id/moreInfoTimeTextView"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="Time"
+        android:textAlignment="textEnd"
+        android:textColor="#E81D4C"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toEndOf="@+id/moreInfoDateTextView"
+        app:layout_constraintTop_toTopOf="@+id/moreInfoDateTextView" />
+
+    <Button
+        android:id="@+id/backEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="BACK"
+        app:layout_constraintEnd_toStartOf="@+id/deleteEventButton"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/moreInfoAddressState" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#444546">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="UPLOAD NEW EVENT"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/uploadEventNameEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Event Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/uploadStartDateTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="Start Date:"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toStartOf="@+id/uploadStartTimeTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/uploadStartTimeTextView" />
+
+        <TextView
+            android:id="@+id/uploadStartTimeTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Start Time:"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/uploadStartDateTextView"
+            app:layout_constraintTop_toBottomOf="@+id/uploadEventNameEditText" />
+
+        <EditText
+            android:id="@+id/uploadStartDateEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="DD/MM/YYYY"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toStartOf="@+id/uploadStartTimeEditText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/uploadStartTimeEditText"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/uploadStartTimeEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="00:00"
+            android:inputType="time"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/uploadStartDateEditText"
+            app:layout_constraintTop_toBottomOf="@+id/uploadStartTimeTextView"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/uploadEndDateTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="End Date:"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toStartOf="@+id/uploadEndTimeTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/uploadEndTimeTextView" />
+
+        <TextView
+            android:id="@+id/uploadEndTimeTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="End Time:"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/uploadEndDateTextView"
+            app:layout_constraintTop_toBottomOf="@+id/uploadStartTimeEditText" />
+
+        <EditText
+            android:id="@+id/uploadEndDateEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="DD/MM/YYYY"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toStartOf="@+id/uploadEndTimeEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/uploadEndTimeEditText"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/uploadEndTimeEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="00:00"
+            android:inputType="time"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/uploadEndDateEditText"
+            app:layout_constraintTop_toBottomOf="@+id/uploadEndTimeTextView" />
+
+        <TextView
+            android:id="@+id/uploadAddressTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Address:"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uploadEndDateEditText" />
+
+        <EditText
+            android:id="@+id/uploadAddressEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Street Number And Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uploadAddressTextView"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/uploadSuburbEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Suburb"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uploadAddressEditText" />
+
+        <EditText
+            android:id="@+id/uploadStateEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="State"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toStartOf="@+id/uploadPostcodeEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/uploadPostcodeEditText" />
+
+        <EditText
+            android:id="@+id/uploadPostcodeEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Postcode"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#818181"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/uploadStateEditText"
+            app:layout_constraintTop_toBottomOf="@+id/uploadSuburbEditText"
+            tools:ignore="TextContrastCheck" />
+
+
+        <Button
+            android:id="@+id/uploadPostButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#E81D4C"
+            android:text="POST"
+            app:iconGravity="start"
+            app:layout_constraintEnd_toStartOf="@+id/uploadCancelButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uploadStateEditText" />
+
+        <Button
+            android:id="@+id/uploadCancelButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#E81D4C"
+            android:text="CANCEL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/uploadPostButton"
+            app:layout_constraintTop_toTopOf="@+id/uploadPostButton"/>
+
+        <Spinner
+            android:id="@+id/uploadEventTypeDropdown"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Event Type"
+            android:textColor="#ffffff"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uploadPostcodeEditText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
